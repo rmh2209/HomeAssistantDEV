@@ -1,0 +1,95 @@
+###VIEWS
+
+living_room_view:
+  view: yes
+  name: Living Room
+  entities:
+    - group.living_room
+
+kitchen_view:
+  view: yes
+  name: Kitchen
+  entities:
+    - group.kitchen
+
+bedroom_view:
+  view: yes
+  name: Bedroom
+  entities:
+    - group.bedroom
+
+foyer_view:
+  view: yes
+  name: Foyer
+  entities:
+    - group.foyer
+
+outside_view:
+  view: yes
+  name: Outside
+  entities:
+    - group.outside
+
+family_view:
+  view: yes
+  name: Family
+  entities:
+    - group.family
+
+###GROUPS
+living room:
+  name: Living Room
+  entities:
+    - light.fireplace_1
+    - light.fireplace_2
+    - light.living_room_fan_1
+    - light.living_room_fan_2
+    - light.living_room_fan_3
+    - light.living_room_fan_4
+    - light.lamp
+    - media_player.living_room_speaker
+    - camera.living_room_2
+    - remote.harmony_hub
+    - sensor.hallway_nest_protect_co_status
+    - sensor.hallway_nest_protect_smoke_status
+
+kitchen:
+  name: kitchen
+  entities:
+    - camera.backdoor
+    - media_player.kitchen_speaker
+
+bedroom:
+  name: Bedroom
+  entities:
+    - climate.bedroom
+    - light.bedroom_lamp_1
+    - light.bedroom_lamp_2
+    - media_player.master_bedroom_speaker
+    - sensor.bedroom_nest_protect_co_status
+    - sensor.bedroom_nest_protect_smoke_status
+
+outside:
+  name: Outside
+  entities:
+    - camera.front_yard
+    - camera.front_door
+    - camera.outdoor_1
+    - camera.outdoor_2
+    - light.driveway_1
+    - light.driveway_2
+    - light.entryway
+
+foyer:
+  name: Foyer
+  entities:
+    - camera.entryway
+    - light.foyer_1
+    - light.foyer_2
+    - light.foyer_3
+
+family:
+  name: Family
+  entities:
+    - device_tracker.ryan_iphone
+    - device_tracker.jordans_iphone
